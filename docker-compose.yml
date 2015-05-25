@@ -1,0 +1,11 @@
+app:
+  build: .
+  command: python ./app.py
+  ports:
+    - "5000:5000"
+  environment:
+    PORT: "5000"
+    DEBUG: "1"
+    DATAFILE: "data/MeasuredProduction_5-20-2015.csv"
+    PYTHONUNBUFFERED: "1"
+
